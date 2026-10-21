@@ -1,7 +1,6 @@
 ---
 title: "Dibalik Besarnya Revenue Stablecoin Issuer"
 date: "2026-07-13"
-category: "view"
 topic: "Cryptocurrency"
 summary: "Bisnis yang masuk top 10 revenue onchain, bisnis yang produk nya mudah diterima dan dipakai orang, bisnis yang paling banyak di integrasikan. Jadi alasan kenapa banyak perusahaan…"
 cover: "https://cdn-images-1.medium.com/max/1024/0*C-lxomOKS2d6h78F"

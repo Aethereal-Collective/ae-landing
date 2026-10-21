@@ -1,7 +1,6 @@
 ---
 title: "Merangkum Alasan Kenapa Banyak Project Mati Tiap Bear Market"
 date: "2026-07-05"
-category: "breakdown"
 topic: "Cryptocurrency"
 summary: "Sepanjang 2026 udah lebih dari 50 project tutup semua punya alasan nya masing masing tapi mereka semua punya pola yang sama. Dari mulai kemunculan bangun hype sampai tutup, muncul…"
 cover: "https://cdn-images-1.medium.com/max/1024/0*DZEpo0zDJiRo2LnF"

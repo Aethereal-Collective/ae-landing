@@ -76,6 +76,12 @@ export default defineNuxtConfig({
 		],
 	},
 
+	// The old /research posts are now the blog; research has its own site.
+	routeRules: {
+		"/research": { redirect: { to: "/blog", statusCode: 301 } },
+		"/research/**": { redirect: { to: "/blog/**", statusCode: 301 } },
+	},
+
 	nitro: {
 		compressPublicAssets: true,
 	},

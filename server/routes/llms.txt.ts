@@ -4,7 +4,7 @@ import { FOCUS_AREAS, PROJECTS } from "~/data/site";
 const SITE = "https://aethereal.top";
 
 export default defineEventHandler(async (event) => {
-	const reports = await queryCollection(event, "research").order("date", "DESC").all();
+	const reports = await queryCollection(event, "blog").order("date", "DESC").all();
 	setResponseHeader(event, "content-type", "text/plain; charset=utf-8");
 	return [
 		"# Aethereal",
@@ -23,7 +23,11 @@ export default defineEventHandler(async (event) => {
 		"",
 		"## Research",
 		"",
-		`Index: ${SITE}/research`,
+		"In-depth research on narratives, protocols, tokens, stocks, and macro: https://research.aethereal.top (and https://research.aethereal.top/llms.txt)",
+		"",
+		"## Blog",
+		"",
+		`Index: ${SITE}/blog`,
 		"",
 		...reports.map((r) => `- [${r.title}](${r.source ?? SITE + r.path}) (${String(r.date).slice(0, 10)}): ${r.summary}`),
 		"",
@@ -31,7 +35,8 @@ export default defineEventHandler(async (event) => {
 		"",
 		`- [About](${SITE}/about)`,
 		`- [Products](${SITE}/products)`,
-		`- [Research](${SITE}/research)`,
+		`- [Blog](${SITE}/blog)`,
+		"- [Research](https://research.aethereal.top)",
 		"",
 	].join("\n");
 });

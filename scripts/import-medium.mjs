@@ -1,4 +1,4 @@
-// Pull Aethereal's Medium posts into content/research as Markdown reports.
+// Pull Aethereal's Medium posts into content/blog as Markdown posts.
 // Re-runnable: existing files are never overwritten, so edits made here stick.
 // Usage: npm run import:medium
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";

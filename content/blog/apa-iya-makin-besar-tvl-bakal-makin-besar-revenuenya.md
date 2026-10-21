@@ -1,7 +1,6 @@
 ---
 title: "Apa Iya Makin Besar TVL Bakal Makin Besar Revenuenya?"
 date: "2026-07-01"
-category: "breakdown"
 topic: "Crypto"
 summary: "TVL jadi Salah satu metrik yang paling sering dipakai buat mengukur kesehatan sebuah protokol. Semakin besar TVL, semakin besar orang percaya. Tapi apakah semakin besar TVL…"
 cover: "https://cdn-images-1.medium.com/max/1024/0*dHBRV79LS0TJh3e-"

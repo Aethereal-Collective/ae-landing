@@ -1,7 +1,6 @@
 ---
 title: "( Teori Liar ) Mengakali Tokenomic dan Token Unlock"
 date: "2026-07-05"
-category: "view"
 topic: "Cryptocurrency"
 summary: "Pernah liat tokenomic yang keliatan bagus? investor cuma pegang 1% locked, team cuma pegang 5% locked sisanya dipegang “Ekosistem” Gimana caranya mereka bisa ngakalin tokenomic…"
 cover: "https://cdn-images-1.medium.com/max/1024/0*-4yeYiYIvNO_AhXe"

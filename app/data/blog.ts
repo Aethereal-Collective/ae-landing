@@ -1,16 +1,5 @@
-// Report categories. Rename labels here; the ids are what report frontmatter uses.
-export const CATEGORIES = [
-	{ id: "the-week", label: "The Week", description: "What moved across crypto and markets this week." },
-	{ id: "breakdown", label: "Breakdown", description: "One topic, taken apart with data." },
-	{ id: "view", label: "View", description: "Our take on a trend or theme." },
-] as const;
-
-export type CategoryId = (typeof CATEGORIES)[number]["id"];
-
-export const categoryLabel = (id: string) => CATEGORIES.find((c) => c.id === id)?.label ?? id;
-
 export const DEFAULT_DISCLOSURE =
-	"This report is for educational purposes only and is not financial advice. Do your own research before making any financial decision.";
+	"This post is for educational purposes only and is not financial advice. Do your own research before making any financial decision.";
 
 // ~200 words per minute, counted from the parsed Markdown tree (minimark: [tag, props, ...children]).
 export function readMinutes(body: unknown): number {

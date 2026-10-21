@@ -1,7 +1,6 @@
 ---
 title: "Kenapa ( Dulu ) Ethereum Perlu L2"
 date: "2026-07-13"
-category: "breakdown"
 topic: "Cryptocurrency"
 summary: "Sebelum ada Upgrade dan ganti konsensus, ethereum tuh secara fungsi kurang praktikal, karena user harus bayar Gas fee yang gede cuma buat sekedar kirim token. Hal ini diperparah…"
 cover: "https://cdn-images-1.medium.com/max/1024/0*H7VriZEXk5dMbI-4"

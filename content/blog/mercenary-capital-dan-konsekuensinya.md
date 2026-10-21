@@ -1,7 +1,6 @@
 ---
 title: "Mercenary Capital dan Konsekuensinya"
 date: "2026-05-25"
-category: "breakdown"
 topic: "Cryptocurrency"
 summary: "Crypto bukan kekurangan user, tapi terlalu banyak user yang datang tanpa…"
 cover: "https://cdn-images-1.medium.com/max/1024/0*N5ZE1hyWCCC7TYch"

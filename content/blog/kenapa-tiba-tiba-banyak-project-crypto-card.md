@@ -1,7 +1,6 @@
 ---
 title: "Kenapa Tiba Tiba Banyak Project Crypto Card"
 date: "2026-05-25"
-category: "view"
 topic: "Stable Coin"
 summary: "wallet bikin card exchange bikin card stablecoin app bikin card bahkan protocol yang awalnya pure DeFi mulai masuk pembayaran tapi kenapa? kok gampang banget? gimana dengan…"
 cover: "https://cdn-images-1.medium.com/max/1024/0*OhBHp6GG6AH8gVEe"
