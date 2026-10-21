@@ -1,6 +1,6 @@
 <template>
 	<footer class="w-full border-t border-neutral-200 bg-neutral-50 px-4 pt-16 pb-8">
-		<div class="mx-auto grid max-w-6xl gap-12 md:grid-cols-[2fr_1fr_1fr_1fr]">
+		<div class="mx-auto grid max-w-6xl gap-12 md:grid-cols-[2fr_1fr_1fr_1fr_1fr]">
 			<div>
 				<NuxtLink to="/" class="flex items-center gap-2 text-lg font-extrabold tracking-tight text-neutral-950">
 					<NuxtImg src="/logo.jpg" alt="Aethereal logo" width="28" height="28" class="size-7 rounded-full" loading="lazy" />
@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import { LINKS } from "~/data/site";
+import { LINKS, PROJECTS } from "~/data/site";
 
 const columns = [
 	{
@@ -40,6 +40,10 @@ const columns = [
 			{ label: "Partners", to: "/#partners" },
 			{ label: "Research", to: "/research" },
 		],
+	},
+	{
+		title: "Products",
+		links: PROJECTS.map((p) => ({ label: p.name, href: p.url })),
 	},
 	{
 		title: "Community",

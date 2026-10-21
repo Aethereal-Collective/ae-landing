@@ -30,7 +30,7 @@
 				<section class="flex flex-col gap-4">
 					<h2 class="text-2xl md:text-3xl font-semibold">Contact</h2>
 					<p class="opacity-70 leading-relaxed">
-						Email us at <a href="mailto:team@aethereal.top" class="underline">team@aethereal.top</a>, or reach us on <a href="https://x.com/aethereal_co" target="_blank" rel="noopener noreferrer" class="underline">X</a> and <a href="https://github.com/Aethereal-Collective" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>.
+						Email us at <a href="mailto:aethereal.hq@gmail.com" class="underline">aethereal.hq@gmail.com</a>, or reach us on <a href="https://x.com/aethereal_co" target="_blank" rel="noopener noreferrer" class="underline">X</a> and <a href="https://github.com/Aethereal-Collective" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>.
 					</p>
 				</section>
 

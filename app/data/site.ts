@@ -6,7 +6,7 @@ export const LINKS = {
 	linkedin: "https://www.linkedin.com/company/aethereal-collective",
 	github: "https://github.com/Aethereal-Collective",
 	medium: "https://medium.com/@aethereal_co",
-	email: "mailto:team@aethereal.top",
+	email: "mailto:aethereal.hq@gmail.com",
 	brandAssets: "https://www.dropbox.com/scl/fo/uvr9qn3ki94wm99zh012j/AEOCG77wwtESqiQHU5rr8LE?rlkey=itwrpsogfbvbovwci4xalvz8g&st=3hbkq67j&dl=0",
 };
 
@@ -45,6 +45,13 @@ export const PROJECTS = [
 		url: "https://halt.aethereal.top/en",
 		image: "/image/halt.webp",
 	},
+	{
+		name: "Aethereal Data",
+		tag: "Data platform",
+		description: "Free stock, crypto, and macro datasets as CSV, Parquet, and MCP for AI assistants.",
+		url: "https://dataset.aethereal.top",
+		image: "/image/dataset.webp",
+	},
 ];
 
 export const ECOSYSTEM = [
@@ -74,6 +81,10 @@ export const FAQ = [
 		a: "Aethereal (æthereal) is a technology organization based in Indonesia, founded in 2023. We build products and publish research across AI, data science, blockchain, and fintech.",
 	},
 	{
+		q: "What products does Aethereal build?",
+		a: "Halt, a free browser extension that blocks crypto phishing sites and holds back dangerous wallet requests (halt.aethereal.top), and Aethereal Data, free stock, crypto, and macro datasets as CSV, Parquet, and an MCP server for AI assistants (dataset.aethereal.top).",
+	},
+	{
 		q: "Do you give investment advice?",
 		a: "No. Our articles and tools are for education and research only.",
 	},
@@ -83,7 +94,7 @@ export const FAQ = [
 	},
 	{
 		q: "How do I work with Aethereal?",
-		a: "Email team@aethereal.top with what you have in mind: partnerships, research, or building something together.",
+		a: "Email aethereal.hq@gmail.com with what you have in mind: partnerships, research, or building something together.",
 	},
 ];
 

@@ -68,6 +68,11 @@ export default defineNuxtConfig({
 				userAgent: "*",
 				allow: "/",
 			},
+			// Answer engines are welcome by name; being read and cited by them is the point.
+			{
+				userAgent: ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot"],
+				allow: "/",
+			},
 		],
 	},
 

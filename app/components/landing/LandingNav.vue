@@ -36,6 +36,7 @@ const links = [
 	{ label: "Products", to: "/products" },
 	{ label: "Partners", to: "/#partners" },
 	{ label: "Research", to: "/research" },
+	{ label: "Data", to: "https://dataset.aethereal.top" },
 	{ label: "About", to: "/about" },
 ];
 </script>

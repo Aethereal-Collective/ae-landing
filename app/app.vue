@@ -50,9 +50,13 @@ useHead({
 				logo: `${siteUrl}/logo.jpg`,
 				description,
 				foundingDate: "2023",
-				email: "team@aethereal.top",
+				email: "aethereal.hq@gmail.com",
 				address: { "@type": "PostalAddress", addressCountry: "ID" },
 				knowsAbout: ["Artificial Intelligence", "Data Science", "Blockchain", "Fintech"],
+				owns: [
+					{ "@type": "SoftwareApplication", name: "Halt", applicationCategory: "SecurityApplication", operatingSystem: "Chrome", url: "https://halt.aethereal.top" },
+					{ "@type": "DataCatalog", name: "Aethereal Data", url: "https://dataset.aethereal.top" },
+				],
 				sameAs: [
 					"https://discord.gg/aethereal",
 					"https://x.com/aethereal_co",
