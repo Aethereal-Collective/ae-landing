@@ -21,7 +21,7 @@
 
 			<div class="mt-10 flex flex-col gap-3 sm:flex-row sm:gap-4">
 				<NuxtLink to="/products" class="rounded-full bg-neutral-950 px-8 py-4 text-base font-semibold text-white shadow-[0_12px_30px_rgba(0,0,0,0.18)] transition-transform hover:scale-[1.03]">Explore Products</NuxtLink>
-				<NuxtLink to="https://research.aethereal.top" class="rounded-full border border-neutral-200 bg-white/80 px-8 py-4 text-base font-semibold text-neutral-950 backdrop-blur transition-colors hover:bg-neutral-50">Read Research</NuxtLink>
+				<NuxtLink to="/blog" class="rounded-full border border-neutral-200 bg-white/80 px-8 py-4 text-base font-semibold text-neutral-950 backdrop-blur transition-colors hover:bg-neutral-50">Read the Blog</NuxtLink>
 			</div>
 		</div>
 

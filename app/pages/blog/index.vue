@@ -4,7 +4,7 @@
 		<main class="mx-auto w-full max-w-6xl px-4 pb-24 pt-32 md:pt-40">
 			<header class="flex flex-col gap-4">
 				<h1 class="text-5xl font-extrabold tracking-[-0.03em] md:text-7xl">Blog</h1>
-				<p class="max-w-2xl text-lg text-neutral-500">Notes and opinions on crypto markets, onchain businesses, and the ideas behind them. For in-depth research, visit <a href="https://research.aethereal.top" class="font-semibold text-neutral-950 underline">Aethereal Research</a>.</p>
+				<p class="max-w-2xl text-lg text-neutral-500">Notes and opinions on crypto markets, onchain businesses, and the ideas behind them.</p>
 			</header>
 
 

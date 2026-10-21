@@ -16,10 +16,7 @@
 		</div>
 
 		<div class="mx-auto mt-12 flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-neutral-200 pt-8 text-xs text-neutral-400 md:flex-row">
-			<p>
-				&copy; {{ new Date().getFullYear() }} Aethereal
-				<template v-for="p in ECOSYSTEM" :key="p.href"><span class="mx-1.5" aria-hidden="true">·</span><a :href="p.href" class="hover:text-neutral-950">{{ p.label }}</a></template>
-			</p>
+			<p>&copy; {{ new Date().getFullYear() }} Aethereal. All rights reserved.</p>
 			<p>Not financial advice. Do your own research.</p>
 		</div>
 		<p aria-hidden="true" class="chrome-text mx-auto mt-10 max-w-6xl select-none text-center text-[clamp(4rem,18vw,15rem)] font-extrabold leading-none tracking-[-0.05em] opacity-60">æthereal</p>
@@ -36,11 +33,5 @@ const SOCIAL = [
 	{ label: "GitHub", href: LINKS.github, icon: "ph:github-logo" },
 	{ label: "Medium", href: LINKS.medium, icon: "ph:medium-logo" },
 	{ label: "Email", href: LINKS.email, icon: "ph:envelope-simple" },
-];
-// Sister sites: one line of links, so search engines see they belong together.
-const ECOSYSTEM = [
-	{ label: "Research", href: "https://research.aethereal.top" },
-	{ label: "Data", href: "https://dataset.aethereal.top" },
-	{ label: "Halt", href: "https://halt.aethereal.top/en" },
 ];
 </script>

@@ -1,4 +1,4 @@
-// llms.txt: a plain-text map of the site for AI assistants and answer engines. Research posts come from Nuxt Content.
+// llms.txt: a plain-text map of the site for AI assistants and answer engines. Blog posts come from Nuxt Content.
 import { FOCUS_AREAS, PROJECTS } from "~/data/site";
 
 const SITE = "https://aethereal.top";
@@ -21,10 +21,6 @@ export default defineEventHandler(async (event) => {
 		"",
 		...FOCUS_AREAS.map((f) => `- ${f.name}: ${f.description}`),
 		"",
-		"## Research",
-		"",
-		"In-depth research on narratives, protocols, tokens, stocks, and macro: https://research.aethereal.top (and https://research.aethereal.top/llms.txt)",
-		"",
 		"## Blog",
 		"",
 		`Index: ${SITE}/blog`,
@@ -36,7 +32,6 @@ export default defineEventHandler(async (event) => {
 		`- [About](${SITE}/about)`,
 		`- [Products](${SITE}/products)`,
 		`- [Blog](${SITE}/blog)`,
-		"- [Research](https://research.aethereal.top)",
 		"",
 	].join("\n");
 });
