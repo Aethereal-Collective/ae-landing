@@ -62,7 +62,7 @@ const tabs = computed(() => [
 	...CATEGORIES.map((c) => ({ id: c.id, label: c.label, count: reports.value.filter((r) => r.category === c.id).length })).filter((t) => t.count),
 ]);
 
-const title = "Research — Aethereal";
+const title = "Research | Aethereal";
 const description = "Analysis on crypto markets, onchain businesses, and the ideas behind them, from Aethereal.";
 useSeoMeta({ title, ogTitle: title, twitterTitle: title, description, ogDescription: description, twitterDescription: description });
 </script>

@@ -86,7 +86,7 @@ onMounted(() => {
 });
 
 const r = report.value;
-const title = `${r.title} — Aethereal Research`;
+const title = `${r.title} | Aethereal Research`;
 useSeoMeta({ title, ogTitle: title, twitterTitle: title, description: r.summary, ogDescription: r.summary, twitterDescription: r.summary, ogType: "article", ...(r.cover && { ogImage: r.cover, twitterImage: r.cover }) });
 useHead({
 	// Posts first published on Medium keep their ranking there; new posts written here rank for aethereal.top.

@@ -43,7 +43,7 @@
 </template>
 
 <script setup lang="ts">
-const title = "About Aethereal — AI, Data Science & Blockchain Organization in Indonesia";
+const title = "About Aethereal: AI, Data Science & Blockchain Organization in Indonesia";
 const description = "Learn about Aethereal, an Indonesia-based tech organization founded in 2023 working on AI, data science, blockchain, fintech, and open-source developer tools.";
 
 useSeoMeta({ title, ogTitle: title, twitterTitle: title, description, ogDescription: description, twitterDescription: description });

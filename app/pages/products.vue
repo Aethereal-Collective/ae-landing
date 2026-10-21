@@ -42,7 +42,7 @@ import { LINKS, PROJECTS } from "~/data/site";
 
 const host = (url: string) => new URL(url).host;
 
-const title = "Products — Aethereal";
+const title = "Products | Aethereal";
 const description = "Products built by Aethereal.";
 useSeoMeta({ title, ogTitle: title, twitterTitle: title, description, ogDescription: description, twitterDescription: description });
 </script>
