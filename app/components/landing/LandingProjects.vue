@@ -2,7 +2,7 @@
 	<section id="products" class="w-full scroll-mt-24 bg-white px-4 py-24 md:py-32">
 		<LandingHeading eyebrow="Products" title="What we" accent="build." />
 
-		<div class="mx-auto mt-14 grid max-w-6xl gap-6 md:grid-cols-2">
+		<div class="mx-auto mt-14 grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
 			<a
 				v-for="p in PROJECTS"
 				:key="p.name"
@@ -21,7 +21,10 @@
 				</div>
 				<div class="flex flex-1 items-end justify-between gap-4 px-3 pb-3 pt-6">
 					<div>
-						<span class="text-xs font-semibold uppercase tracking-[0.15em] text-neutral-400">{{ p.tag }}</span>
+						<span class="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-neutral-400">
+							{{ p.tag }}
+							<span v-if="'partner' in p" class="rounded-full bg-neutral-950 px-2.5 py-0.5 tracking-normal text-white normal-case">By our partner</span>
+						</span>
 						<h3 class="mt-1 text-2xl font-extrabold tracking-tight text-neutral-950">{{ p.name }}</h3>
 						<p class="mt-2 text-neutral-500">{{ p.description }}</p>
 					</div>

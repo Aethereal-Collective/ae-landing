@@ -7,7 +7,7 @@
 			<LandingStats />
 			<LandingFocus />
 			<LandingProjects />
-			<LandingPartners />
+			<LandingCommunity />
 			<LandingInsights />
 			<LandingProcess />
 			<LandingFaq />

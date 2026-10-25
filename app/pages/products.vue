@@ -4,7 +4,7 @@
 		<main class="mx-auto w-full max-w-6xl px-4 pb-24 pt-32 md:pt-40">
 			<header class="flex flex-col gap-4">
 				<h1 class="text-5xl font-extrabold tracking-[-0.03em] md:text-7xl">Products</h1>
-				<p class="max-w-2xl text-lg text-neutral-500">What we build and ship.</p>
+				<p class="max-w-2xl text-lg text-neutral-500">What we build and ship, and what our partners build.</p>
 			</header>
 
 			<div class="mt-12 flex flex-col gap-8">
@@ -17,7 +17,10 @@
 						<NuxtImg v-if="p.image" :src="p.image" :alt="`${p.name} screenshot`" width="1440" height="900" class="aspect-[16/10] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]" />
 					</div>
 					<div class="flex flex-col gap-4 p-2 md:p-4">
-						<span class="w-fit rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold text-neutral-600">{{ p.tag }}</span>
+						<div class="flex flex-wrap gap-2">
+							<span class="w-fit rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold text-neutral-600">{{ p.tag }}</span>
+							<span v-if="'partner' in p" class="w-fit rounded-full bg-neutral-950 px-3 py-1 text-xs font-semibold text-white">Built by our partner</span>
+						</div>
 						<h2 class="text-3xl font-extrabold tracking-tight md:text-4xl">{{ p.name }}</h2>
 						<p class="leading-relaxed text-neutral-500">{{ p.description }}</p>
 						<span class="mt-2 inline-flex w-fit items-center gap-2 rounded-full bg-neutral-950 px-6 py-3 text-sm font-semibold text-white transition-transform group-hover:scale-[1.03]">
@@ -43,6 +46,6 @@ import { LINKS, PROJECTS } from "~/data/site";
 const host = (url: string) => new URL(url).host;
 
 const title = "Products | Aethereal";
-const description = "Products built by Aethereal: Halt, a crypto phishing blocker, and Aethereal Data, free stock, crypto, and macro datasets.";
+const description = "Products built by Aethereal: Halt, a crypto phishing blocker, and Aethereal Data, free stock, crypto, and macro datasets. Plus EVM Shaker, built by our partner.";
 useSeoMeta({ title, ogTitle: title, twitterTitle: title, description, ogDescription: description, twitterDescription: description });
 </script>

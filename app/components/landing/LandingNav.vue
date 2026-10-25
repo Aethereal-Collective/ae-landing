@@ -34,7 +34,7 @@ const open = ref(false);
 const links = [
 	{ label: "What We Do", to: "/#focus" },
 	{ label: "Products", to: "/products" },
-	{ label: "Partners", to: "/#partners" },
+	{ label: "Community", to: "/#community" },
 	{ label: "Blog", to: "/blog" },
 	{ label: "About", to: "/about" },
 ];

@@ -52,6 +52,15 @@ export const PROJECTS = [
 		url: "https://dataset.aethereal.top",
 		image: "/image/dataset.webp",
 	},
+	{
+		name: "EVM Shaker",
+		tag: "Liquidity workspace",
+		// Built and owned by a partner team, labeled as such wherever it's shown.
+		partner: true,
+		description: "A multichain liquidity workspace for tracking positions, value over time, and unclaimed fees.",
+		url: "https://app.evmshaker.io/app",
+		image: "/image/partners/evmshaker.webp",
+	},
 ];
 
 export const ECOSYSTEM = [
@@ -98,14 +107,10 @@ export const FAQ = [
 	},
 ];
 
-// Partner projects. Screenshots live in public/image/partners/ (1440×900 webp).
-export const PARTNERS = [
-	{
-		name: "EVM Shaker",
-		tagline: "Liquidity. In your hands.",
-		description: "A multichain liquidity workspace for tracking positions, value over time, and unclaimed fees.",
-		chains: ["Ethereum", "Base", "BNB Chain", "Robinhood", "Arc"],
-		image: "/image/partners/evmshaker.webp",
-		url: "https://app.evmshaker.io/app",
-	},
+// Communities we like and hang out with. Shown as communities to follow, not as partners.
+export const COMMUNITIES = [
+	{ name: "Garap.fun", handle: "garapdotfun", image: "/image/community/garap.jpg", url: "https://x.com/garapdotfun" },
+	{ name: "Enclavium", handle: "EnclaviumFNF", image: "/image/community/enclavium.jpg", url: "https://x.com/EnclaviumFNF" },
+	{ name: "Emperor Journal", handle: "emperorjournal_", image: "/image/community/emperor-journal.jpg", url: "https://x.com/emperorjournal_" },
+	{ name: "Stress Capital", handle: "StressCapitals", image: "/image/community/stress-capital.jpg", url: "https://x.com/StressCapitals" },
 ];

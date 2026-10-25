@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
 		"",
 		"## Products",
 		"",
-		...PROJECTS.map((p) => `- [${p.name}](${p.url}): ${p.description} (${p.tag})`),
+		...PROJECTS.map((p) => `- [${p.name}](${p.url}): ${p.description} (${p.tag}${"partner" in p ? ", built by a partner team" : ""})`),
 		"",
 		"## What we work on",
 		"",
