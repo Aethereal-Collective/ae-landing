@@ -1,5 +1,5 @@
 <template>
-	<section id="faq" class="w-full scroll-mt-24 bg-white px-4 py-24 md:py-32">
+	<section id="faq" class="cv-auto w-full scroll-mt-24 bg-white px-4 py-24 md:py-32">
 		<LandingHeading eyebrow="FAQ" title="Questions," accent="answered." />
 
 		<div class="mx-auto mt-14 flex max-w-3xl flex-col gap-3">

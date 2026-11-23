@@ -14,7 +14,7 @@
 				<p class="mt-5 text-lg leading-relaxed text-neutral-500">{{ post.summary }}</p>
 			</header>
 
-			<img v-if="post.cover" :src="post.cover" :alt="post.title" fetchpriority="high" decoding="async" class="mt-10 aspect-[16/8] w-full rounded-[2rem] border border-neutral-200 object-cover" />
+			<img v-if="post.cover" :src="post.cover" :alt="post.title" width="1200" height="600" fetchpriority="high" decoding="async" class="mt-10 aspect-[16/8] w-full rounded-[2rem] border border-neutral-200 object-cover" />
 
 			<div class="mt-12 grid gap-12 lg:grid-cols-[220px_minmax(0,1fr)]">
 				<aside v-if="toc.length" class="hidden lg:block">
