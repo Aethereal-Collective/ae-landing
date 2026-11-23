@@ -1,7 +1,7 @@
 <template>
 	<div class="bg-white text-neutral-950">
 		<LandingNav />
-		<main>
+		<main id="main-content">
 			<LandingHero />
 			<LandingEcosystem />
 			<LandingStats />

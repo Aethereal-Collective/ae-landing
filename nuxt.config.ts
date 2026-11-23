@@ -78,6 +78,16 @@ export default defineNuxtConfig({
 
 	// The old /research posts are now the blog; research has its own site.
 	routeRules: {
+		"/**": {
+			headers: {
+				"X-Content-Type-Options": "nosniff",
+				"Referrer-Policy": "strict-origin-when-cross-origin",
+				"X-Frame-Options": "SAMEORIGIN",
+				"Content-Security-Policy": "frame-ancestors 'self'",
+				"Cross-Origin-Opener-Policy": "same-origin-allow-popups",
+				"Permissions-Policy": "camera=(), geolocation=(), microphone=(), focus-without-user-activation=()",
+			},
+		},
 		"/research": { redirect: { to: "/blog", statusCode: 301 } },
 		"/research/**": { redirect: { to: "/blog/**", statusCode: 301 } },
 	},

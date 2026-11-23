@@ -17,8 +17,8 @@ export default defineContentConfig({
 					source: z.string().optional(),
 				}),
 			},
-			// Posts canonical to Medium stay out of our sitemap.
-			{ name: "blog", filter: (entry: { source?: string }) => !entry.source },
+			// Include all blog posts in sitemap.xml so aethereal.top owns its search equity.
+			{ name: "blog" },
 			),
 		),
 	},

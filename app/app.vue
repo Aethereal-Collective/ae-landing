@@ -54,8 +54,8 @@ useHead({
 				address: { "@type": "PostalAddress", addressCountry: "ID" },
 				knowsAbout: ["Artificial Intelligence", "Data Science", "Blockchain", "Fintech"],
 				owns: [
-					{ "@type": "SoftwareApplication", name: "Halt", applicationCategory: "SecurityApplication", operatingSystem: "Chrome", url: "https://halt.aethereal.top" },
-					{ "@type": "DataCatalog", name: "Aethereal Data", url: "https://dataset.aethereal.top" },
+					{ "@type": "SoftwareApplication", name: "Halt", description: "Free Chrome extension that blocks 160K+ crypto phishing sites and wallet drainers.", applicationCategory: "SecurityApplication", operatingSystem: "Chrome, Brave", url: "https://halt.aethereal.top" },
+					{ "@type": "DataCatalog", name: "Aethereal Data", description: "Free daily financial, stock (IDX & S&P 500), macro, and crypto datasets in CSV, Parquet, and MCP.", url: "https://dataset.aethereal.top" },
 				],
 				sameAs: [
 					"https://discord.gg/aethereal",

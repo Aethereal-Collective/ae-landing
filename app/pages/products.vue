@@ -1,20 +1,20 @@
 <template>
 	<div class="bg-white text-neutral-950">
 		<LandingNav />
-		<main class="mx-auto w-full max-w-6xl px-4 pb-24 pt-32 md:pt-40">
+		<main id="main-content" class="mx-auto w-full max-w-6xl px-4 pb-24 pt-32 md:pt-40">
 			<header class="flex flex-col gap-4">
 				<h1 class="text-5xl font-extrabold tracking-[-0.03em] md:text-7xl">Products</h1>
 				<p class="max-w-2xl text-lg text-neutral-500">What we build and ship, and what our partners build.</p>
 			</header>
 
 			<div class="mt-12 flex flex-col gap-8">
-				<a v-for="p in PROJECTS" :key="p.name" :href="p.url" target="_blank" rel="noopener noreferrer" class="group grid items-center gap-8 overflow-hidden rounded-[2rem] border border-neutral-200 bg-neutral-50/60 p-4 transition-shadow hover:shadow-[0_24px_60px_rgba(0,0,0,0.08)] md:p-6 lg:grid-cols-[1.4fr_1fr]">
+				<a v-for="(p, i) in PROJECTS" :key="p.name" :href="p.url" target="_blank" rel="noopener noreferrer" class="group grid items-center gap-8 overflow-hidden rounded-[2rem] border border-neutral-200 bg-neutral-50/60 p-4 transition-shadow hover:shadow-[0_24px_60px_rgba(0,0,0,0.08)] md:p-6 lg:grid-cols-[1.4fr_1fr]">
 					<div class="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm">
 						<div class="flex items-center gap-1.5 border-b border-neutral-200 px-4 py-3" aria-hidden="true">
 							<span class="size-2.5 rounded-full bg-neutral-300" /><span class="size-2.5 rounded-full bg-neutral-300" /><span class="size-2.5 rounded-full bg-neutral-300" />
 							<span class="ml-3 truncate rounded-full bg-neutral-100 px-3 py-1 text-[11px] text-neutral-400">{{ host(p.url) }}</span>
 						</div>
-						<NuxtImg v-if="p.image" :src="p.image" :alt="`${p.name} screenshot`" width="1440" height="900" class="aspect-[16/10] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]" />
+						<NuxtImg v-if="p.image" :src="p.image" :alt="`${p.name} screenshot`" width="1440" height="900" :loading="i === 0 ? 'eager' : 'lazy'" :fetchpriority="i === 0 ? 'high' : undefined" class="aspect-[16/10] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]" />
 					</div>
 					<div class="flex flex-col gap-4 p-2 md:p-4">
 						<div class="flex flex-wrap gap-2">
@@ -45,7 +45,7 @@ import { LINKS, PROJECTS } from "~/data/site";
 
 const host = (url: string) => new URL(url).host;
 
-const title = "Products | Aethereal";
-const description = "Products built by Aethereal: Halt, a crypto phishing blocker, and Aethereal Data, free stock, crypto, and macro datasets. Plus EVM Shaker, built by our partner.";
+const title = "Products — Halt Crypto Anti-Phishing & Free Financial Datasets | Aethereal";
+const description = "Explore Aethereal's free open-source tools: Halt, a Chrome extension blocking crypto phishing & wallet drainers, and Aethereal Data, free daily stock, crypto & macro datasets in CSV, Parquet & MCP.";
 useSeoMeta({ title, ogTitle: title, twitterTitle: title, description, ogDescription: description, twitterDescription: description });
 </script>

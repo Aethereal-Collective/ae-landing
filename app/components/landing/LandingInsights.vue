@@ -5,7 +5,7 @@
 		<div class="mx-auto mt-16 grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
 			<NuxtLink v-for="(r, i) in reports" :key="r.path" :to="r.path" class="group flex flex-col overflow-hidden rounded-3xl border border-neutral-200 bg-white transition-shadow hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)]" data-aos="fade-up" :data-aos-delay="i * 80">
 				<div class="aspect-[16/9] overflow-hidden bg-neutral-100">
-					<img v-if="r.cover" :src="r.cover" :alt="r.title" loading="lazy" class="size-full object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0" />
+					<img v-if="r.cover" :src="r.cover" :alt="r.title" loading="lazy" decoding="async" class="size-full object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0" />
 				</div>
 				<div class="flex flex-1 flex-col gap-3 p-6">
 					<ReportMeta :report="r" />

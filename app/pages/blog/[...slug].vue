@@ -1,11 +1,11 @@
 <template>
 	<div v-if="post" class="bg-white text-neutral-950">
 		<LandingNav />
-		<main class="mx-auto w-full max-w-6xl px-4 pb-24 pt-32 md:pt-40">
+		<main id="main-content" class="mx-auto w-full max-w-6xl px-4 pb-24 pt-32 md:pt-40">
 			<nav class="text-sm text-neutral-400" aria-label="Breadcrumb">
 				<NuxtLink to="/blog" class="hover:text-neutral-950">Blog</NuxtLink>
-				<span class="mx-2">/</span>
-				<span>{{ post.topic }}</span>
+				<span class="mx-2" aria-hidden="true">/</span>
+				<span aria-current="page">{{ post.topic }}</span>
 			</nav>
 
 			<header class="mt-6 max-w-3xl">
@@ -14,7 +14,7 @@
 				<p class="mt-5 text-lg leading-relaxed text-neutral-500">{{ post.summary }}</p>
 			</header>
 
-			<img v-if="post.cover" :src="post.cover" :alt="post.title" class="mt-10 aspect-[16/8] w-full rounded-[2rem] border border-neutral-200 object-cover" />
+			<img v-if="post.cover" :src="post.cover" :alt="post.title" fetchpriority="high" decoding="async" class="mt-10 aspect-[16/8] w-full rounded-[2rem] border border-neutral-200 object-cover" />
 
 			<div class="mt-12 grid gap-12 lg:grid-cols-[220px_minmax(0,1fr)]">
 				<aside v-if="toc.length" class="hidden lg:block">
@@ -22,7 +22,7 @@
 						<p class="text-xs font-semibold uppercase tracking-[0.15em] text-neutral-400">Contents · {{ activeIndex + 1 }} of {{ toc.length }}</p>
 						<ol class="mt-4 space-y-1 border-l border-neutral-200 text-sm">
 							<li v-for="(item, i) in toc" :key="item.id">
-								<a :href="`#${item.id}`" :class="[i === activeIndex ? 'border-neutral-950 font-semibold text-neutral-950' : 'border-transparent text-neutral-500 hover:text-neutral-950', item.depth === 3 ? 'pl-7' : 'pl-4']" class="-ml-px block border-l-2 py-1.5">{{ item.text }}</a>
+								<a :href="`#${item.id}`" :aria-current="i === activeIndex ? 'location' : undefined" :class="[i === activeIndex ? 'border-neutral-950 font-semibold text-neutral-950' : 'border-transparent text-neutral-500 hover:text-neutral-950', item.depth === 3 ? 'pl-7' : 'pl-4']" class="-ml-px block border-l-2 py-1.5">{{ item.text }}</a>
 							</li>
 						</ol>
 					</div>
@@ -89,8 +89,6 @@ const r = post.value;
 const title = `${r.title} | Aethereal Blog`;
 useSeoMeta({ title, ogTitle: title, twitterTitle: title, description: r.summary, ogDescription: r.summary, twitterDescription: r.summary, ogType: "article", ...(r.cover && { ogImage: r.cover, twitterImage: r.cover }) });
 useHead({
-	// Posts first published on Medium keep their ranking there; new posts written here rank for aethereal.top.
-	...(r.source && { link: [{ rel: "canonical", href: r.source }] }),
 	script: [
 		{
 			type: "application/ld+json",

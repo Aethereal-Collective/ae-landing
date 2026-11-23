@@ -10,7 +10,7 @@
 			</div>
 			<div class="flex gap-2">
 				<a v-for="s in SOCIAL" :key="s.label" :href="s.href" :aria-label="s.label" target="_blank" rel="noopener noreferrer" class="grid size-10 place-items-center rounded-full border border-neutral-200 bg-white text-neutral-500 transition-colors hover:text-neutral-950">
-					<Icon :name="s.icon" class="text-lg" />
+					<Icon :name="s.icon" class="text-lg" aria-hidden="true" />
 				</a>
 			</div>
 		</div>

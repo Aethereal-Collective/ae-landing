@@ -1,7 +1,7 @@
 <template>
 	<div class="bg-white text-neutral-950">
 		<LandingNav />
-		<main class="w-full flex flex-col items-center px-5 pt-32 pb-20 md:pt-40">
+		<main id="main-content" class="w-full flex flex-col items-center px-5 pt-32 pb-20 md:pt-40">
 			<article class="w-full max-w-3xl flex flex-col gap-12">
 				<header class="flex flex-col gap-4">
 					<h1 class="text-4xl md:text-6xl font-black">About Aethereal</h1>
